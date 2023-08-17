@@ -19,6 +19,10 @@ body{
     height: 100%;
     align-items: center;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 .sidebar-info{
     display: flex;
     flex-direction: column;
@@ -72,7 +76,10 @@ img{
     border-radius: 5px;
     
 } */
-
+.fa-brands:hover{
+    font-size: 150%;
+    background-color: #790ce664;
+}
 .dob,.phone,.email,.address{
     background-color: rgb(19, 19, 21);
     width: 95%;
@@ -103,12 +110,21 @@ img{
     margin-left: 15px;
     background-color: rgb(2, 2, 2);
     border-radius: 10px;
+    overflow-y: scroll;
+    
+}
+.details>p{
+    
+    width: 80%;
+}
+.details::-webkit-scrollbar{
+    display:none;
 }
 .tabs{
     display: flex;
     flex-direction: column;
     height: fit-content;
-    width: 10vw;
+    width: 13%;
     margin-left: 15px;
     background-color: rgb(2, 2, 2);
     border-radius: 10px;
@@ -117,20 +133,29 @@ img{
   
 }
 .tabs ul{
-    
+    display: flex;
+    flex-direction: column;
     list-style-type: none;
     font-size: 15px;
     overflow-wrap: break-word;
     word-break: break-word;
     padding: 0px;
+    justify-content: center;
+    align-items: center;
+    
 }
 .tabs>ul>li{
-    
+    width: 80%;
     padding-top: 15px;
     padding-bottom: 15px;
+    border-radius: 5px;
+    justify-self: center;
 }
-
+.tabs>ul>li:hover{
+    background-color: #790ce664;
+}
 button{
     padding:50px;
     box-shadow: 0px 0px 30px 5px rgba(192, 169, 169, 0.3);
 }
+
